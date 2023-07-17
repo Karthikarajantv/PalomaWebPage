@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    box-sizing: border-box;
+}
+
+.palomaimg {
+
+
+    background-image: url("./images/paloma.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.logo {
+    max-width: 80%;
+    max-height: 100%;
+    margin: 20px 20px 0 0;
+    transition: transform 1.2s;
+}
+
+.logo:hover
+{
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+
+h1 {
+
+    font-size: 120px;
+    font-weight: 400;
+    text-align: left;
+    color: #b6b6b6;
+    transition: top ease 0.5s;
+}
+
+.container-fluid {
+    min-height: 100vh;
+}
+
+.pcol2 {
+    display: flex;
+    overflow: hidden;
+    justify-content: end;
+    align-items: flex-end;
+    min-height: 100vh;
+    padding-right: 10px;
+}
+
+.pcol2 div {
+    align-self: flex-end;
+    transform: rotate(270deg);
+    width: 120px;
+    
+}
+
+h1:hover
+{
+   color: #fff;
+
+}
+
+/*--------------------Media Queries-----------------*/
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .pcol2 {
+        min-height: 50px;
+        flex-direction: column;
+        gap: 20px;
+        overflow: visible;
+
+    }
+
+    .pcol2 div {
+        transform: none;
+        align-self: center;
+        width: 100%;
+
+    }
+
+    .logo {
+        transform: rotate(90deg);
+        width: 20%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .pcol1 {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px)
+{
+    h1{
+    font-size: 90px;
+}
+}
